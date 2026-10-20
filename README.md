@@ -4,19 +4,19 @@ Markdown Slides Application
 
 A simple web application built using HTML, CSS, and JavaScript that allows users to create and present slides using Markdown.
 
-Features
+=> Features
 
-Live Markdown editor and preview
+1. Live Markdown editor and preview
 
-Multiple slides separated by ---
+2. Multiple slides separated by ---
 
-Previous and Next slide navigation
+3. Previous and Next slide navigation
 
-Keyboard shortcuts and full-screen presentation
+4. Keyboard shortcuts and full-screen presentation
 
-Save and restore slides using localStorage
+5. Save and restore slides using localStorage
 
-=>Technologies Used
+=> Technologies Used
 
 1. HTML
 
