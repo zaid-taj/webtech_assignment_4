@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--THis tells the HTML that where to find the css file-->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Application</title>
+</head>
+<body>
+    <h1>Slides Application</h1>
+    <!--to add the markdown text area use the textarea tag of HTML-->
+
+    <!--adding the main container which includes the editor and the live preview layout-->
+    <div class="whole_layout">
+        <div class="layouts">
+            <h2>MarkDown Editor</h2>
+            <!-- using id attribute so that javascript should know the textarea and placeholder for the written text-->
+            <textarea id="markdown_input" placeholder="Write Markdown Script"></textarea>
+        </div>
+        <div class="layouts">
+            <h2>Live Preview</h2>
+            <!--to add the navigation inside the presentation view-->
+            <div id="presentation">
+            <div id="live_preview"></div>
+                <div class="nav">
+                    <button id="prev">Previous</button>
+                    <span id="slide_counter">1/1</span>
+                    <button id="next">Next</button>
+
+                    <!-- full screen button-->
+                     <button id="fullscreen_button">Full Screen</button>
+
+                     <!--adding the save button so it will save the contents of the slides when i refresh the browser-->
+                     <button id="save_button">Save</button>
+                </div>
+                </div>
+
+        </div>
+    </div>
+
+    <!--This will make the marked library availabke to your Javascript file --> 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!--This tells the HTML that where to find the Javascript-->
+    <script src="javascript.js"></script>
+</body>
+</html>

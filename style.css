@@ -1,0 +1,34 @@
+.whole_layout{
+    display: flex; /*display flex aligns the layouts of editor and the live preview horizontally*/
+    gap: 100px; /* gives 20px gap between the 2 sections*/
+}
+
+.layouts{
+    padding: 20px; /* adds space inside each layout*/
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+/* making the markdown input box larger*/
+#markdown_input {
+    width: 100%;
+    min-height: 400px;
+}
+
+#presentation:fullscreen {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation:fullscreen #live_preview {
+    flex: 1;
+    overflow: auto;
+}
+
+#presentation:fullscreen .navigation {
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px;
+}
